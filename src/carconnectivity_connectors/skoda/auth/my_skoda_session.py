@@ -20,10 +20,10 @@ from oauthlib.common import add_params_to_uri, generate_nonce, to_unicode
 from oauthlib.oauth2 import InsecureTransportError
 from oauthlib.oauth2 import is_secure_transport
 
-from carconnectivity.errors import AuthenticationError, RetrievalError, TemporaryAuthenticationError
+from carconnectivity.errors import TemporaryAuthenticationError
 
-from carconnectivity_connectors.skoda.auth.openid_session import AccessType
-from carconnectivity_connectors.skoda.auth.skoda_web_session import SkodaWebSession
+from weconnect.auth.openid_session import AccessType
+from weconnect.auth.skoda_web_session import SkodaWebSession
 
 if TYPE_CHECKING:
     from typing import Set

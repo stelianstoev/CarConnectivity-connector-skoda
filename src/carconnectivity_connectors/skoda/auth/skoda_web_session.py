@@ -15,8 +15,8 @@ from requests.models import CaseInsensitiveDict
 
 from carconnectivity.errors import APICompatibilityError, AuthenticationError, RetrievalError
 
-from carconnectivity_connectors.skoda.auth.auth_util import CredentialsFormParser, HTMLFormParser, TermsAndConditionsFormParser
-from carconnectivity_connectors.skoda.auth.openid_session import OpenIDSession
+from weconnect.auth.auth_util import CredentialsFormParser, HTMLFormParser, TermsAndConditionsFormParser
+from weconnect.auth.openid_session import OpenIDSession
 
 if TYPE_CHECKING:
     from typing import Any, Dict

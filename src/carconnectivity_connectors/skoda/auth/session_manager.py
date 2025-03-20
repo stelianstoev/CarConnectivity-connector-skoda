@@ -12,9 +12,9 @@ import logging
 
 from requests import Session
 
-from carconnectivity_connectors.skoda.auth.my_skoda_session import MySkodaSession
+from weconnect.auth.my_skoda_session import MySkodaSession
 
-LOG = logging.getLogger("carconnectivity.connectors.skoda.auth")
+LOG = logging.getLogger("weconnect")
 
 
 class SessionUser():
